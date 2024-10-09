@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Game Grove Webpage</title> <!-- Updated title -->
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            background-color: #ffcccb; /* Light pink color */
+            font-family: 'Arial', sans-serif;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .games-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Adjusts number of columns */
+            gap: 20px; /* Space between grid items */
+            width: 80%;
+            max-width: 1200px;
+        }
+        .game {
+            background: #fff;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            text-align: center;
+            padding: 20px;
+            transition: transform 0.3s;
+        }
+        .game img {
+            max-width: 100%; /* Responsive image */
+            height: auto;
+            border-radius: 10px;
+        }
+        .game:hover {
+            transform: scale(1.05); /* Scale effect on hover */
+        }
+        .game a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to My Games Page</h1>
+    <div class="games-container">
+        <div class="game">
+            <a href="file:///C:/games/2048/index.html"> 
+                <img src="C:\games\2048/imagepic.jpg" alt="Game 1">
+                <p>Game 1</p>
+            </a>
+        </div>
+        <div class="game">
+            <a href="file:///C:/games/candycrush/index.html"> 
+                <img src="C:\games\candycrush/image.jpg" alt="Game 2">
+                <p>Game 2</p>
+            </a>
+        </div>
+        <div class="game">
+            <a href="file:///C:/games/Hangman%20Game/index.html"> 
+                <img src="C:\games\Hangman Game/image.jpg" alt="Game 3">
+                <p>Game 3</p>
+            </a>
+        </div>
+        <div class="game">
+            <a href="file:///C:/games/whac-a-mole-master/index.html"> 
+                <img src="C:\games\whac-a-mole-master/image.jpg" alt="Game 4">
+                <p>Game 4</p>
+            </a>
+        </div>
+        <div class="game">
+            <a href="file:///C:/games/Memory%20Card%20Games/Memory%20Cards%20Game%20[Demo%202]/index.html"> 
+                <img src="C:\games\Memory Card Games\Memory Cards Game [Demo 2]/image.jpg" alt="Game 5">
+                <p>Game 5</p>
+            </a>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
